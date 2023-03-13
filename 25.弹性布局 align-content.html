@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            /*align-items: center;*/
+            /*align-content: stretch;*/
+            justify-content: stretch;
+            flex-wrap: wrap;
+            width: 400px;
+            height: 400px;
+            background: pink;
+        }
+
+        .box1 {
+            /*width: inherit;*/
+            height: initial;
+            background: skyblue;
+            border: 1px black solid;
+        }
+
+        .body {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body class="body">
+
+<div class="main">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+</div>
+
+</body>
+
+</html>
