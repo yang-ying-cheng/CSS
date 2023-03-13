@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+            position: relative;
+        }
+
+        .box1 {
+            width: 500px;
+            height: 500px;
+            border: 1px black solid;
+            margin: 100px;
+            position: relative;/*给box2的父容器添加一个定位*/
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            position: absolute;
+            /*绝对定位是针对于离他最近的祖先容器进行定位的*/
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+</body>
+
+</html>

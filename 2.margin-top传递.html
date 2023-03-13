@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: pink;
+            border: 1px solid black;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            margin-top: 20px;/*只给box2设置一个20px的外边距，会发现box1也会有被顶下来*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

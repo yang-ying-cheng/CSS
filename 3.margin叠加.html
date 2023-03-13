@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: pink;
+            border: 1px solid black;
+            margin-bottom: 40px;/*加一个40px*/
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            margin-top: 20px;/*只给box2设置一个20px的外边距，会发现box1也会有被顶下来*/
+        }
+    </style>
+</head>
+
+<body>
+    <!-- box1下外边距为40px -->
+    <div class="box1">
+    </div>
+    <!-- box2上外边距为20px，按照正常逻辑，加起来应该是60px，但其实不是 -->
+    <div class="box2">
+    </div>
+
+</body>
+
+</html>
