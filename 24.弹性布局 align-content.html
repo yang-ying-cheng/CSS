@@ -8,9 +8,9 @@
     <style>
         .main {
             display: flex;
-            /*align-items: center;*/
-            /*align-content: stretch;*/
-            justify-content: stretch;
+            /*align-content: flex-end;*/
+            align-content: space-evenly;
+            /*align-content: flex-end;*/
             flex-wrap: wrap;
             width: 400px;
             height: 400px;
@@ -18,24 +18,27 @@
         }
 
         .box1 {
-            /*width: inherit;*/
-            height: initial;
+            width: 200px;
+            height: 100px;
             background: skyblue;
             border: 1px black solid;
         }
 
-        .body {
-            align-items: center;
+        .main div:nth-of-type(3) {
+            width: 50px;
+            height: 50px;
+            border: 1px black solid;
+            background: skyblue;
         }
     </style>
 </head>
 
-<body class="body">
+<body>
 
 <div class="main">
     <div class="box1">1</div>
     <div class="box1">2</div>
-    <div class="box1">3</div>
+    <div>3</div>
 </div>
 
 </body>
