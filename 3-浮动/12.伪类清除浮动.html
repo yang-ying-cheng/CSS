@@ -11,24 +11,26 @@
             border: 1px black solid;
         }
         .box1 {
+            width: 200px;
+            border: 1px solid black;
+        }
+        .box2{
             width: 100px;
             height: 100px;
             background: pink;
             float: left;
         }
-        .box2{
-            width: 200px;
-            height: 200px;
-            background: skyblue;
-            clear: left;
+        .clearfix::after{
+            content: "";/*这个相当于在盒子里面加了内容，但是他默认是一个内联盒子*/
+            clear: both;
+            display: block;/*这里将内联盒子转化为块级盒子*/
         }
     </style>
 </head>
 <body>
-    <div class="box1">
-    </div>
-    <div class="box2">
+    <div class="box1 clearfix">
+        <div class="box2">
+        </div>
     </div>
 </body>
-
 </html>

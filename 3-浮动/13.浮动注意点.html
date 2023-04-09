@@ -7,28 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box1 {
-            width: 200px;
-            border: 1px solid black;
+        body{
+            border: 1px black solid;
         }
-        .box2{
+        .box1 {
             width: 100px;
             height: 100px;
             background: pink;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: skyblue;
             float: left;
         }
-        .clearfix::after{
-            content: "";/*这个相当于在盒子里面加了内容，但是他默认是一个内联盒子*/
-            clear: both;
-            display: block;/*这里将内联盒子转化为块级盒子*/
+        .box3{
+            width: 300px;
+            height: 300px;
+            background: red;
         }
     </style>
 </head>
 <body>
-    <div class="box1 clearfix">
-        <div class="box2">
-        </div>
-    </div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <!-- 文字不会被覆盖 -->
+    <div class="box3">我是一个盒子</div>
    
 </body>
 
