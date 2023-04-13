@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        section {
+        .section {
             /*触发了BFC，形成独立盒子*/
             overflow: hidden;
         }
@@ -24,14 +24,13 @@
         } </style>
 </head>
 <body>
-<section>
+<div class="section">
 <!--    BFC解决传递问题-->
-
-    <div class="box1"></div>
-</section>
-<section>
-    <div class="box2"></div>
-</section>
+    <div class="box1 section"></div>
+</div>
+<div>
+    <div class="box2 section"></div>
+</div>
 
 </body>
 </html>
