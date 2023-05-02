@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid-template-areas</title>
+    <style>
+        .main {
+            width: 300px;
+            height: 300px;
+            background: skyblue;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            /*
+            如果单纯加这个，页面布局不会有任何变化，必须配合gird-area一起使用
+            相当于给区域取一个别名，靠别名来进行一个合并
+            */
+            /*grid-template-areas:*/
+            /*"a1 a1 a2"*/
+            /*"a1 a1 a2"*/
+            /*"a3 a3 a3";*/
+            grid-template-areas:
+            "a1 a2 a3";
+        }
+
+        .main div {
+            background: pink;
+            border: 1px black solid;
+        }
+
+        /*.main div:nth-of-type(1){*/
+        /*    grid-area: a1;*/
+        /*}*/
+
+        .main div:nth-of-type(1){
+            grid-area: a2;
+        }
+
+        /*.main div:nth-of-type(2){*/
+        /*    grid-area: a2;*/
+        /*}*/
+        /*.main div:nth-of-type(3){*/
+        /*    grid-area: a3;*/
+        /*}*/
+
+    </style>
+
+</head>
+<body>
+<div class="main">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+</body>
+</html>

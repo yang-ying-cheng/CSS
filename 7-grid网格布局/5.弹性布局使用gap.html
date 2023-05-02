@@ -1,0 +1,37 @@
+<!--
+grid-template是grid-template-columns、grid-template-rows、grid-template-areas的缩写
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性布局使用gap</title>
+    <style>
+        .main {
+            width: 300px;
+            background: skyblue;
+            display: flex;
+            flex-wrap: wrap;/*给一个换行*/
+            gap: 10px 5px;
+        }
+
+        .main div {
+            width: 100px ;
+            height: 100px;
+            background: pink;
+            border: 1px black solid;
+        }
+    </style>
+
+</head>
+<body>
+<div class="main">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+</div>
+</body>
+</html>
